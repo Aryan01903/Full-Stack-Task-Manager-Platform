@@ -2,15 +2,15 @@ import { Router } from "express";
 import TaskController from "./controller.js";
 import { authMiddleware } from "../../middleware/authMW.js";
 
-const router = Router();
+const taskRoutes = Router();
 
-router.use(authMiddleware);
+taskRoutes.use(authMiddleware);
 
-router.get("/stats", TaskController.getTaskStats);  
-router.get("/", TaskController.getAllTasks);         
-router.get("/:id", TaskController.getTaskById);     
-router.post("/", TaskController.createTask);       
-router.patch("/:id", TaskController.updateTask); 
-router.delete("/:id", TaskController.deleteTask);   
+taskRoutes.get("/stats", TaskController.getTaskStats);  
+taskRoutes.get("/", TaskController.getAllTasks);         
+taskRoutes.get("/:id", TaskController.getTaskById);     
+taskRoutes.post("/", TaskController.createTask);       
+taskRoutes.patch("/:id", TaskController.updateTask); 
+taskRoutes.delete("/:id", TaskController.deleteTask);   
 
-export default router;
+export default taskRoutes;
