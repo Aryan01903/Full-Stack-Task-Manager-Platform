@@ -17,11 +17,11 @@ const modelSchema = new Schema<ITask>(
     },
     status: {
       type: String,
-      enum: ["PENDING", "COMPLETED"],
-      default: "PENDING",
+      enum: ["pending", "completed"],
+      default: "pending",
     },
     userId: {
-      type: Schema.Types.ObjectId,
+      type: String,
       ref: "Users",
       required: true,
     },
