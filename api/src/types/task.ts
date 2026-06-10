@@ -1,5 +1,3 @@
-import { Types } from "mongoose";
-
 export interface ITask {
     title: string;
     description: string;

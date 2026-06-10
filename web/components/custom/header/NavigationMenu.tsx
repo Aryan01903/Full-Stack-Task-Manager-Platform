@@ -27,7 +27,7 @@ const NavigationMenus = () => {
           <Link
             key={item.id}
             href={item.href || "#"}
-            className="relative text-sm md:text-base font-medium text-zinc-800 transition hover:text-white"
+            className="relative text-sm md:text-base font-medium text-zinc-300 transition hover:text-white"
           >
             {item.label}
 

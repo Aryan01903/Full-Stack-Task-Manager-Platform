@@ -29,12 +29,12 @@ const features = [
 
 export default function WhyTaskPilot() {
   return (
-    <section className="py-9 md:py-16 px-6 md:px-10">
+    <section className="bg-[#111827] py-9 md:py-16 px-6 md:px-10">
       <p className="text-sm md:text-base font-medium tracking-widest uppercase text-[#EE6C0E] mb-2">
         Why TaskPilot
       </p>
 
-      <h2 className="text-3xl font-bold mb-6 md:mb-10">
+      <h2 className="text-3xl font-bold mb-6 md:mb-10 text-white">
         Everything you need,{" "}
         <span className="text-[#EE6C0E]">nothing you don&apos;t</span>
       </h2>

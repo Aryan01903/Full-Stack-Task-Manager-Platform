@@ -38,11 +38,11 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-9 md:py-16 px-6 md:px-10">
+    <section className="bg-[#111827] py-9 md:py-16 px-6 md:px-10">
       <p className="text-sm md:text-base font-medium tracking-widest uppercase text-[#EE6C0E] mb-2">
         How it works
       </p>
-      <h2 className="text-3xl font-bold mb-6 md:mb-10">
+      <h2 className="text-3xl font-bold mb-6 md:mb-10 text-white">
         Up and running in <span className="text-[#EE6C0E]">four steps</span>
       </h2>
 
@@ -62,12 +62,11 @@ export default function HowItWorks() {
                   <div className="w-10 h-10 rounded-lg bg-[#EE6C0E]/10 flex items-center justify-center">
                     <Icon size={20} className="text-[#EE6C0E]" />
                   </div>
-                  <span className="text-2xl font-bold text-white/30">
+                  <span className="text-2xl font-bold text-white/20">
                     {step.step}
                   </span>
                 </div>
 
-                {/* flex-1 — description ko neeche push karta hai equal height ke liye */}
                 <div className="flex flex-col gap-1 flex-1">
                   <h3 className="text-base md:text-lg font-medium text-white">
                     {step.title}
